@@ -1,0 +1,7 @@
+<h1>LIST</h1>
+<ul>
+    {% for card in card_list.all %}
+        <li><a href="{% url 'cards:card' card.id %}"><img src="{{ card.img }}"/>
+             {{ card.title }} </a></li>
+    {% endfor %}
+</ul>
